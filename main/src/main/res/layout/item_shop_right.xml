@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root">
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:scaleType="fitXY" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_imageAssetsFolder="images/" />
+    <ImageView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/dp_56"
+        android:visibility="gone"
+        android:layout_height="@dimen/dp_56"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/category_default"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dp_14" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@+id/iv_top"
+        android:text="商品一商"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_7"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:maxLines="1"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_9"
+        android:visibility="gone"
+        android:layout_below="@+id/tv_name"
+        android:src="@mipmap/shop_start"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_name"-->
+<!--        android:text="立即开始"-->
+<!--        android:textSize="11dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@drawable/bg_shop_start"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingRight="15dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="25dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:paddingBottom="2dp"-->
+<!--        android:paddingTop="2dp"-->
+<!--        android:singleLine="true"-->
+<!--        android:layout_marginLeft="6dp"-->
+<!--        android:layout_marginRight="6dp"-->
+<!--        android:layout_marginTop="5dp" />-->
+</RelativeLayout>

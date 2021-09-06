@@ -1,0 +1,61 @@
+ext {
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+            versionCode      : 16,//版本号
+            versionName      : "3.7.2"//版本名
+    ]
+
+    manifestPlaceholders = [
+            //服务器地址
+            //多线路配置，有多少条线路配多少
+            serverHost       : "http://47.75.111.156",
+
+            //极光推送
+            JPUSH_PKGNAME : "com.rhby.phonelive",//包名
+            JPUSH_APPKEY : "afb37b5580bc9e388ba2b560", //JPush 上注册的包名对应的 Appkey.
+            JPUSH_CHANNEL : "JPUSH_PKGNAMEdeveloper-default", //暂时填写默认值即可.
+
+            //配置注册分层（纯数字需要添加反斜杠，如 LAYERID  :  "\\8\\",）
+            LAYERID  :  "",
+
+            //美颜
+            BEAUTY_KEY : "46f7bfd43d40451fb450900782be1cc7",
+
+            //是不是需要美颜,1是需要,0是不需要，此处必须配值0，或是1,斜杠不能删
+            BEAUTY_NEED : "\\1\\",
+
+            //友盟统计
+            umengAppKey : "5f5f2ec5b4739632429ee3b3",
+
+            //邀请码(如果是纯数字，需加双斜杠包裹，如\\1\\)
+            invitationCode : "",
+
+            /**
+             * 以下可以不配置
+             *
+             */
+            //腾讯bugly
+            buglyAppId       : "35ae6f576d",
+
+            //腾讯地图
+            txMapAppKey      : "1",
+            txMapAppSecret   : "1",
+
+            //百度语音识别
+
+            baiduAppId       : "1",
+            baiduAppKey      : "1",
+
+            baiduAppSecretKey: "1",
+
+
+
+
+            
+    ]
+
+
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/view_buy_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_content_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.yunbao.main.widget.ViewShopTop
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/dp_91"
+                android:background="@color/color_F3F3F3"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_content_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_F3F3F3"
+                        android:layout_weight="1"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+                        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                            android:id="@+id/refreshLayout"
+                            android:layout_width="match_parent"
+                            app:srlAccentColor="@color/color_999999"
+                            app:srlPrimaryColor="@color/white"
+                            app:srlEnablePreviewInEditMode="true"
+                            android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                            <RelativeLayout
+                                android:id="@+id/no_net"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_height="match_parent">
+                                <include layout="@layout/view_no_net_live_video"/>
+                            </RelativeLayout>
+                        </com.scwang.smartrefresh.layout.SmartRefreshLayout >
+                        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                            android:id="@+id/refreshLayout3"
+                            android:layout_width="match_parent"
+                            app:srlAccentColor="@color/color_999999"
+                            app:srlPrimaryColor="@color/white"
+                            android:visibility="gone"
+                            app:srlEnablePreviewInEditMode="true"
+                            android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_height="match_parent">
+                                <include layout="@layout/view_no_net_live_video"/>
+                            </RelativeLayout>
+                        </com.scwang.smartrefresh.layout.SmartRefreshLayout >
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_no_content_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_gravity="center">
+                    <include layout="@layout/view_no_data_shop"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_no_content_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center">
+            <include layout="@layout/view_no_data_shop"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/botView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"/>
+</LinearLayout>

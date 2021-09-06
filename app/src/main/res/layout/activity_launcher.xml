@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    >
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/btn_skip_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_launcher_skip"
+        android:visibility="invisible"
+        >
+
+        <com.yunbao.common.custom.CircleProgress
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cp_bg_color="@color/white"
+            app:cp_cur_progress="0"
+            app:cp_fg_color="@color/colorPrimary"
+            app:cp_stroke_width="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/recommend_skip"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_skip_video"
+        android:layout_width="44dp"
+        android:layout_height="26dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_launcher_skip_2"
+        android:gravity="center"
+        android:text="@string/recommend_skip"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_loading"
+        android:layout_gravity="bottom|center_horizontal">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="@dimen/dp_370"
+            android:layout_height="@dimen/dp_130"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="welcome_loading.json"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_failed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:text="服务器异常，请稍后再试"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/dp_13"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="@color/color_999999"/>
+</FrameLayout>

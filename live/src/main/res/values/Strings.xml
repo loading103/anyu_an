@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="coin_pay" tools:ignore="MissingTranslation">确认支付(￥%1$s)</string>
+    <string name="live_choose_live_photo" tools:ignore="MissingTranslation">请选择封面</string>
+    <string name="live_type">普通房间</string>
+</resources>

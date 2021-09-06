@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="65dp"
+        android:id="@+id/ll_root"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_content"
+            android:src="@mipmap/ic_launcher_sys_msg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_content"
+            android:text="吉他"
+            android:textSize="12sp"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="7dp"
+            android:maxLength="4"
+            android:ellipsize="end"/>
+    </LinearLayout>
+</LinearLayout>

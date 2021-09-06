@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/fl_bg"
+            android:background="@drawable/shape_item_unchoose">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/img"
+                    android:src="@mipmap/item_tj"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:text="推荐"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:maxLength="4"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+        </FrameLayout>
+        <View
+            android:id="@+id/iv_red"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_8"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/im_shape_c9"/>
+
+    </RelativeLayout>
+</LinearLayout>

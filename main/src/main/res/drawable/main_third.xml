@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list  xmlns:android="http://schemas.android.com/apk/res/android">
+    android:oneshot="true">
+    <item android:drawable="@mipmap/tab3_00" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_01" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_02" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_03" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_04" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_05" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_06" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_07" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_08" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_09" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_10" android:duration="52"/>
+    <item android:drawable="@mipmap/tab3_11" android:duration="22"/>
+    <item android:drawable="@mipmap/tab3_12" android:duration="22"/>
+    <item android:drawable="@mipmap/tab3_13" android:duration="22"/>
+    <item android:drawable="@mipmap/tab3_14" android:duration="22"/>
+    <item android:drawable="@mipmap/tab3_15" android:duration="22"/>
+    <item android:drawable="@mipmap/tab3_16" android:duration="22"/>
+
+</animation-list>

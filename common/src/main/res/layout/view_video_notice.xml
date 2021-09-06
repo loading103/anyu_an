@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:paddingBottom="20dp"
+    android:id="@+id/fl_root">
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/video_down_notici"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/video_down_close"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

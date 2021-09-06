@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="-100dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/view_no_net"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="当前网络环境不佳"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:layout_marginTop="14dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请检查网络连接后重试~"
+        android:textColor="@color/gray1"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:id="@+id/tv_try"
+        android:text="重试"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_no_net"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+</LinearLayout>

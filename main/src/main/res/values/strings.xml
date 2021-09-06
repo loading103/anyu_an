@@ -1,0 +1,9 @@
+<resources>
+    <string name="access">接入</string>
+    <string name="live_no_data_10">暂无接入</string>
+    <string name="live_no_data_8">附近没有主播开播</string>
+    <string name="live_no_data_9">去首页看看其他主播的直播吧~</string>
+    <string name="coin_pay">确认支付(￥%1$s)</string>
+    <string name="string_privacy">已阅读并同意《用户充值协议》</string>
+    <string name="tips2">提现金额为整数，小数点后金额自动返还</string>
+</resources>

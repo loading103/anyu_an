@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:id="@+id/rootView"
+        >
+
+        <com.yunbao.common.custom.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canScroll="false" />
+
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/main_title"
+            android:layout_alignParentBottom="true">
+
+            <com.yunbao.common.custom.TabButtonGroup
+                android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/dp_2"
+                android:orientation="horizontal">
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_checked="true"
+                    app:tbn_icon_size="26dp"
+                    app:tbn_text_color="@color/colorPrimaryNew"
+                    app:tbn_text_size="11sp" />
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="26dp"
+                    app:tbn_text_color="@color/color_888888"
+                    app:tbn_text_size="11sp" />
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tb4"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="26dp"
+                    app:tbn_text_color="@color/color_888888"
+                    app:tbn_text_size="11sp" />
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tb3"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="26dp"
+                    app:tbn_text_color="@color/color_888888"
+                    app:tbn_text_size="11sp" />
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="26dp"
+                    app:tbn_text_color="@color/color_888888"
+                    app:tbn_text_size="11sp" />
+            </com.yunbao.common.custom.TabButtonGroup>
+
+            <ImageView
+                android:id="@+id/btn_start"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:onClick="mainClick"
+                android:src="@mipmap/icon_main_start"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="75dp"
+        android:visibility="gone"
+        android:layout_gravity="center|bottom"
+        android:src="@mipmap/main_btn_login"
+        />
+</FrameLayout>
